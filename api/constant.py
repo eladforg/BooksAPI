@@ -1,1 +1,4 @@
-BASE_URL = "http://localhost:8090/example/v1/hotels"
+BASE_URL = "https://fakerestapi.azurewebsites.net"
+
+FULL_URL = "https://fakerestapi.azurewebsites.net/api/v1/Books"
+

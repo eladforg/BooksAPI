@@ -15,6 +15,13 @@ data = [(900, HTTPStatus.OK), (7, HTTPStatus.NOT_FOUND)]
 fake = Faker()
 
 
+
+
+
+
+
+
+
 @allure.description("Get all hotels")
 def test_get_hotels():
     driver = webdriver.Chrome()
