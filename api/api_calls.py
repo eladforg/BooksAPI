@@ -1,7 +1,7 @@
 import requests
 from requests import Response
 
-from allure_attachments import AllureAttachments
+from api.allure_attachments import AllureAttachments
 
 
 class ApiRequests:

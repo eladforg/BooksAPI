@@ -4,7 +4,7 @@ from _pytest.config import Config
 from pytest import fixture
 from faker import Faker
 from faker.generator import random
-import constant
+from api import constant
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -36,8 +36,8 @@ def pytest_configure(config: Config) -> None:
 
 
 
-# screenshot for failing test:
-def pytest_exception_interact(report):
-    if report.failed:
-        allure.attach(body=driver.get_screenshot_as_png(), name="screenshot",
-                      attachment_type=allure.attachment_type.PNG)
+# # screenshot for failing test:
+# def pytest_exception_interact(report):
+#     if report.failed:
+#         allure.attach(body=driver.get_screenshot_as_png(), name="screenshot",
+#                       attachment_type=allure.attachment_type.PNG)
